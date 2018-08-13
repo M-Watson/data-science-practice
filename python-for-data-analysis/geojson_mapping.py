@@ -9,26 +9,20 @@ import numpy as np
 import requests
 import pandas as pd
 
+
 def base_map(fp):
-    BLUE = '#6699cc'
-    th = []
-    feature_list = []
-    poly_list = []
-    fig_base = plt.figure()
-    th.append(requests.get(url_list['geojsonURL'][3]).text)
-    gj = geojson.loads(th[ii])
+    #fp = "..\\..\\..\\Geographies\GeoJson\\Census_Tracts_in_2010.geojson"
     with open(fp) as f:
         gj = geojson.load(f)
+    BLUE = '#6699cc'
 
-    i = 0
-    i_end = len(gj['features']) - 1
-    for i in range(i_end):
-        feature_list.append(gj['features'][i])
-        poly_list.append(gj['features'][i]['geometry'])
-           #Plotting
-        ax_1 = fig_base.gca()
-        ax_1.add_patch(PolygonPatch(poly_list[i], fc=BLUE, ec=BLUE, alpha=0.5, zorder=2 ))
+    fig = plt.figure(num=None, figsize=(20, 16), dpi=80, facecolor='w', edgecolor='k')
+    fig.show()
+    return(fig)
 
-    ax_1.axis('scaled')
-    plt.show()
-    return(fig_base)
+
+fp = "hawaii.geojson"
+
+a= base_map(fp)
+a.show()
+input('wait')
