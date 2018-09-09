@@ -1,0 +1,8 @@
+descartes
+geojson
+matplotlib
+seaborn
+#shapely   # didn't work, it might be a windows issue but I think it comes in anaconda
+numpy
+requests
+pandas

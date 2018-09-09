@@ -21,7 +21,7 @@ def base_map(fp):
     return(fig)
 
 
-fp = "hawaii.geojson"
+fp = "Census_Tracts_in_2010.geojson"
 
 a= base_map(fp)
 a.show()
