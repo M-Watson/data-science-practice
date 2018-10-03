@@ -1,5 +1,5 @@
 println("Hello, world")
 
-import PyPlot
+import Plots
 #PyPlot.pyplot()
-PyPlot.plot(rand(5,5),linewidth=2,title="My Plot") # The same plotting command works
+Plots.plot(rand(5,5),linewidth=2,title="My Plot") # The same plotting command works
