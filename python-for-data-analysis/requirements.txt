@@ -1,0 +1,4 @@
+Requests
+pandas
+seaborn
+shapely
