@@ -8,6 +8,7 @@ This will be a workspace to practice some of the techniques explored in the Pyth
 
 * Honolulu - https://data.honolulu.gov/
 * New Orleans - https://data.nola.gov/
+* Fast.ai - http://www.fast.ai/2018/10/16/aws-datasets/
 
 
 ## Machine learning
