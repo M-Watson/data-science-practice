@@ -21,7 +21,7 @@ def base_map(fp):
     return(fig)
 
 
-fp = "Census_Tracts_in_2010.geojson"
+fp = "nola-neighborhood.geojson"
 
 a= base_map(fp)
 a.show()
