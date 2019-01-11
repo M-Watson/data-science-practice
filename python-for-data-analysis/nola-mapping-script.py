@@ -26,7 +26,7 @@ for feat in data["features"]:
     # plot the centroids
     ax.plot(x, y, 'None')
     # label the features at the centroid location
-    ax.text(x, y, feat['properties']['gnocdc_lab'], fontsize=4, bbox = dict(fc='w',alpha=0.3))
+    #ax.text(x, y, feat['properties']['gnocdc_lab'], fontsize=4, bbox = dict(fc='w',alpha=0.3))
     # plot the polygon features: type help(PolygonPatch) for more args
     ax.add_patch(PolygonPatch(feat["geometry"], fc=(color_r,color_g,color_b), ec='blue',
                 alpha=0.5, lw=0.5, ls='--', zorder=2))
