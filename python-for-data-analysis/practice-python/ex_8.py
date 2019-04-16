@@ -10,7 +10,14 @@ Remember the rules:
 import random
 
 def win_check(hand1,hand2):
+
+
     result = 'tie'
+
+    options = {'rock':,'paper','scissors'}
+
+    options.index('hand1')
+
     if hand1 == 'rock':
         if hand2 == 'scissors':
             result = 'hand1'
